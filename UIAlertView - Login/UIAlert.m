@@ -6,6 +6,9 @@
 //  Copyright (c) 2021 AnyKey Entertainment. All rights reserved.
 //
 
+static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
 UIAlertController *Login = [UIAlertController alertControllerWithTitle:@"Made By @TheSxfter" message:nil preferredStyle:UIAlertControllerStyleAlert];
 
 [Login addTextFieldWithConfigurationHandler:^(UITextField *Text) {
@@ -17,7 +20,7 @@ actionWithTitle:@"Unlock" style:UIAlertActionStyleDefault
 handler:^(UIAlertAction * _Nonnull action) {
 
 UITextField *text = Login.textFields.firstObject;
-if ([text.text isEqualToString:@"Letovsky#7777"]) {
+if ([text.text isEqualToString:@"Letovsky#6664"]) {
 
 UIAlertController *Nice = [UIAlertController alertControllerWithTitle:@"You have passed verification! \n Verification was created by \n @thesxfter" message:nil preferredStyle:UIAlertControllerStyleAlert];
 
