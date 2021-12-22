@@ -45,4 +45,4 @@ customView.backgroundColor = [UIColor redColor];
 
 
 ### Thanks to the original team
-- Code [@Letovsky] (https://t.me/tweakdev) Letovsky
+- Code [@Thesxfter] (https://t.me/tweakdev) Letovsky
