@@ -13,7 +13,7 @@ alert.showAnimationType = SCLAlertViewShowAnimationFadeIn;
 alert.hideAnimationType = SCLAlertViewHideAnimationFadeOut;
 alert.shouldDismissOnTapOutside = NO;
 alert.backgroundType = SCLAlertViewBackgroundBlur;
-//by ad dev (AA)
+//by Letovsky dev (AA)
 alert.cornerRadius = 10.0f;
 alert.backgroundViewColor = [UIColor colorWithRed: 0.99 green: 0.45 blue: 0.42 alpha: 1.00];
 
@@ -45,7 +45,7 @@ nice.backgroundViewColor = [UIColor colorWithRed: 0.99 green: 0.45 blue: 0.42 al
       });
     }];    
 
-NSString *loggedin = [check stringForKey:@"TGHOANG"];
+NSString *loggedin = [check stringForKey:@"Letovsky"];
 timer(2) {
 if([loggedin isEqualToString:@"1"]) {
 [nice showSuccess:@"You're Logged In!               Welcome!" subTitle:@"\n Created by Letovsky" closeButtonTitle:nil duration:999999999.0f];
@@ -54,14 +54,14 @@ if([loggedin isEqualToString:@"1"]) {
 }
 });
 
-UITextField *text1 = [alert addTextField:@"KEY:TGHOANG"];
+UITextField *text1 = [alert addTextField:@"KEY:"];
 
 [alert addButton:@"OPEN HACK" actionBlock:^ (void) {
-if ([text1.text isEqualToString:@"TGHOANG"] ) {
-[check setObject:@"1" forKey:@"TGHOANG"];
+if ([text1.text isEqualToString:@"LETOVSKY"] ) {
+[check setObject:@"1" forKey:@"LETOVSKY"];
 [check synchronize];
 timer(1) {
-[nice showSuccess:@"TGHOANG ANTIBAN FREE" subTitle:@"TGHOANG"
+[nice showSuccess:@"LETOVSKY FREE" subTitle:@"LETOVSKY"
 closeButtonTitle:nil duration:999999999.0f];
 
 
@@ -70,7 +70,7 @@ closeButtonTitle:nil duration:999999999.0f];
 else
 {
 timer(1) {
-[bad showError:@"Wrong Username or Pasword Game will crash now,After that you can try again" subTitle:@"\nTGHOANG" closeButtonTitle:nil duration:999999999.0f];
+[bad showError:@"Wrong Username or Pasword Game will crash now,After that you can try again" subTitle:@"\nLETOVSKY" closeButtonTitle:nil duration:999999999.0f];
 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
 exit(0);
 });
@@ -83,7 +83,7 @@ if(![loggedin isEqualToString:@"1"])
 {NSData* data = [[NSData alloc] initWithBase64EncodedString:@"BASE64 IMAGE HERE " options:0];
 UIImage* customAlertImage = [UIImage imageWithData:data];   
 
-[alert showCustom:alert image:customAlertImage color:[UIColor blueColor] title:@"TGHOANG" subTitle:@"\nEnter Key To Open Hack                 KEY: TGHOANG" closeButtonTitle:nil duration:9999999999.0f];
+[alert showCustom:alert image:customAlertImage color:[UIColor blueColor] title:@"LETOVSKY" subTitle:@"\nEnter Key To Open Hack                 KEY: TGHOANG" closeButtonTitle:nil duration:9999999999.0f];
 }
 });
 } 
