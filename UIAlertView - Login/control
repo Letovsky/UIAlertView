@@ -1,9 +1,0 @@
-Package: my
-Name: By @TheSxfter
-Depends: mobilesubstrate
-Version: 0.1
-Architecture: iphoneos-arm
-Description: DEV / Letovsky
-Maintainer: Letovsky
-Author: Letovsky
-Section: Tweaks
