@@ -6,9 +6,6 @@
 //  Copyright (c) 2021 AnyKey Entertainment. All rights reserved.
 //
 
-static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-
 UIAlertController *Login = [UIAlertController alertControllerWithTitle:@"Made By @TheSxfter" message:nil preferredStyle:UIAlertControllerStyleAlert];
 
 [Login addTextFieldWithConfigurationHandler:^(UITextField *Text) {
@@ -49,6 +46,4 @@ exit(3);
 [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:Login animated:true completion:nil];
 });
 }
-%ctor {
-CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
-}
+
