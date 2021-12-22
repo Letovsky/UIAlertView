@@ -4,6 +4,25 @@ Animated Login Alert View written in Swift but ported to Objective-C, which can 
 
 ![BackgroundImage](https://i.ibb.co/wzqjwCB/9-FC77-F02-20-A1-45-DB-AD1-C-5-D52-A8-F480-B6.jpg)
 
+### Add buttons
+```Objective-C
+SCLAlertView *alert = [[SCLAlertView alloc] init];
+//Using Selector
+[alert addButton:@"First Button" target:self selector:@selector(firstButton)];
+//Using Block
+[alert addButton:@"Second Button" actionBlock:^(void) {
+    NSLog(@"Second button tapped");
+}];
+//Using Blocks With Validation
+[alert addButton:@"Validate" validationBlock:^BOOL {
+    BOOL passedValidation = ....
+    return passedValidation;
+} actionBlock:^{
+    // handle successful validation here
+}];
+[alert showSuccess:self title:@"Button View" subTitle:@"This alert view has buttons" closeButtonTitle:@"Done" duration:0.0f];
+```
+
 ### Add button timer
 ```Objective-C
 //The index of the button to add the timer display to.
