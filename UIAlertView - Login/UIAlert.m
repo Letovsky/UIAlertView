@@ -1,7 +1,9 @@
-// 
 //
-//   Developer - Letovsky
+//  UIAlert.m
+//  
 //
+//  Created by Letovsky on 23/12/2021.
+//  Copyright (c) 2021 AnyKey Entertainment. All rights reserved.
 //
 
 UIAlertController *Login = [UIAlertController alertControllerWithTitle:@"Made By @TheSxfter" message:nil preferredStyle:UIAlertControllerStyleAlert];
